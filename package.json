@@ -1,0 +1,41 @@
+{
+  "name": "base_app",
+  "version": "1.0.0",
+  "description": "Production-ready Node.js Express auth CRUD with Prisma MySQL",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "test": "jest --runInBand",
+    "test:watch": "jest --watch",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:deploy": "prisma migrate deploy"
+  },
+  "keywords": [
+    "express",
+    "prisma",
+    "mysql",
+    "joi",
+    "winston",
+    "jest"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "joi": "^17.13.3",
+    "prisma": "^5.20.0",
+    "@prisma/client": "^5.20.0",
+    "uuid": "^10.0.0",
+    "winston": "^3.15.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.4",
+    "supertest": "^7.0.0"
+  }
+}
